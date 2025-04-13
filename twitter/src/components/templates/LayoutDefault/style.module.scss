@@ -1,0 +1,36 @@
+.BodyContainer {
+    padding: 0px 24px 24px;
+    .Breadcrumb {
+        margin: 16px 0px;
+    }
+
+    .ContentContainer {
+        padding: 5px 10px;
+        margin: 0px;
+        min-height: 280px;
+        overflow-y: scroll;
+
+        /* Ẩn scrollbar mặc định nhưng vẫn có thể cuộn */
+        &::-webkit-scrollbar {
+            width: 8px; /* Chiều rộng thanh cuộn dọc */
+            height: 8px; /* Chiều cao thanh cuộn ngang */
+        }
+
+        /* Màu nền của thanh cuộn */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        /* Phần kéo của thanh cuộn */
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        /* Hover vào thanh cuộn */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+}

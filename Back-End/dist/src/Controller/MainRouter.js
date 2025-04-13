@@ -1,0 +1,11 @@
+"use strict";
+const express = require("express");
+const router = express();
+const MainController = require("./MainController");
+router.post("/CreateMulitpleAccount", MainController.CreateMulitpleAccount);
+router.post("/GetAccounts", MainController.getAccounts);
+router.post("/OpenChrome", MainController.openChrome);
+router.post("/CreateSchedule", MainController.createSchedule);
+router.post("/StartSchedule/:ScheduleId", MainController.startScheduleById);
+router.post("/stopScheduleById/:ScheduleId", MainController.stopScheduleById);
+module.exports = router;
